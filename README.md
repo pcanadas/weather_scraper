@@ -3,17 +3,17 @@ Este proyecto automatiza la recopilación y el procesamiento de datos meteoroló
 
 ## Archivos principales
 
-*links_clima.ipynb*
+*links_clima.py*
 
 Este archivo genera una lista de enlaces a datos climáticos históricos desde una fuente específica y los guarda en un archivo de texto.
 
-*proceso_clima.ipynb*
+*proceso_clima.py*
 
-Este archivo lee las URLs generadas en links_clima.ipynb, accede a cada una con Selenium, extrae la información relevante sobre el clima con BeautifulSoup y la almacena en formato CSV para su posterior análisis.
+Este archivo lee las URLs generadas en links_clima.py, accede a cada una con Selenium, extrae la información relevante sobre el clima con BeautifulSoup y la almacena en formato CSV para su posterior análisis.
 
-*limpieza_clima.ipynb*
+*limpieza_clima.py*
 
-Este script se encarga de limpiar y estructurar los datos crudos extraídos con el archivo proceso_clima.ipynb. Realiza las siguientes tareas:
+Este script se encarga de limpiar y estructurar los datos crudos extraídos con el archivo proceso_clima.py. Realiza las siguientes tareas:
 
 - Separa el título en ciudad y fecha.
 
@@ -21,17 +21,17 @@ Este script se encarga de limpiar y estructurar los datos crudos extraídos con 
 
 - Genera un DataFrame limpio y lo guarda en limpio/clima_limpio.csv para su análisis posterior.
 
-*links_prevision.ipynb*
+*links_prevision.py*
 
 Este archivo genera una lista de enlaces a datos de previsión climática desde una fuente específica y los guarda en un archivo de texto.
 
-*proceso_prevision.ipynb*
+*proceso_prevision.py*
 
-Este archivo lee las URLs generadas en links_prevision.ipynb, accede a cada una con Selenium, extrae la información relevante sobre el clima con BeautifulSoup y la almacena en formato CSV para su posterior análisis.
+Este archivo lee las URLs generadas en links_prevision.py, accede a cada una con Selenium, extrae la información relevante sobre el clima con BeautifulSoup y la almacena en formato CSV para su posterior análisis.
 
-*limpieza_prevision.ipynb*
+*limpieza_prevision.py*
 
-Este script se encarga de limpiar y estructurar los datos crudos extraídos con el archivo proceso_prevision.ipynb. Realiza las siguientes tareas:
+Este script se encarga de limpiar y estructurar los datos crudos extraídos con el archivo proceso_prevision.py. Realiza las siguientes tareas:
 
 - Extrae información de ciudad, fecha de recolección de datos, fecha de la previsión, temperaturas máxima y mínima, clima esperado y viento.
 
